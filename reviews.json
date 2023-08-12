@@ -1,0 +1,81 @@
+[
+    {
+        "image": "images/reviewer-1.webp",
+        "name": "Teresa Parrott",
+        "review": "If you have an event and want someone who can come in and take care of all the decor and ambiance without having to worry, use The Velvet Willow. Tiffany was literally prepared for everything and thought about things I wouldn’t have. She transformed a space in literally less than 2 hours and everything was PERFECT! #Ambeyoncé",
+        "source": "Google Review",
+        "date": "6/6/2021"
+    },
+    {
+        "image": "images/reviewer-2.webp",
+        "name": "Sarah Davis",
+        "business": "Bee-Balanced Events, The KNOT",
+        "review": "Style and design was absolutely perfect, Tiffanie did a phenomenal job bringing the vision to life! She has an amazing inventory of really unique and one-of-a-kind antique pieces that elevated the overall vibe…it was everything we wanted and more! Tiffanie is so talented, LOVED working with her!!! ",
+        "source": "The KNOT Review",
+        "date": "11/15/21"
+    },
+    {
+        "image": "images/reviewer-3.webp",
+        "name": "Josh Beeson",
+        "review": "Wow. A one-of-a-kind local business with a rare eye for tasteful aesthetic. When it comes to uniquely styled event curation, which can truly be the secret sauce that brings an event to life, to become a more visceral expression of the intention or nature of the event, The Velvet Willow stands alone. Very pleased with my experience. 10/10 would recommend",
+        "source": "Google Review",
+        "date": "11/28/2021"
+    },
+    {
+        "image": "images/reviewer-4.webp",
+        "name": "Erin Grether",
+        "review": "Tiffanie is so professional, creative, and talented. Her arrangements are always beautiful down to every last detail. If you are looking to book a party or event, absolutely call her at The Velvet Willow. She does not disappoint!!",
+        "source": "Google Review",
+        "date": "8/9/2020"
+    },
+    {
+        "image": "images/reviewer-5.webp",
+        "name": "Paige Gibbens",
+        "business": "Bungalow Salon",
+        "review": "Love, love, love! The Velvet Willow does it all, everything from just providing me with just a couple statement pieces for photoshoots for my business, to decorating my entire house for parties with unique flower arrangments, backdrops, and tapas spreads, to making weddings dreamy with her endless supply of bohemian and vintage decor. Big or small she's got ya covered.",
+        "date": "8/24/2020"
+    },
+    {
+        "image": "images/reviewer-6.webp",
+        "name": "Ashlee Hamilton Buchert",
+        "review": "Tiffanie is amazing! She really puts her all into the design and aesthetic of the room. We held a Galantine’s event this past weekend where she styled and created the most beautiful lounge area! I can’t wait to use her beautiful pieces again. Love her!",
+        "source": "Facebook Review",
+        "date": "2/17/2021"
+    },
+    {
+        "image": "images/reviewer-7.webp",
+        "name": "Julie Jones",
+        "review": "Tiffanie created the most beautiful sets for my fall family pictures. She really went next level with the design and the result was magical pictures that I'll cherish forever. She is so talented, creative and goes above and beyond to ensure the space is what you dreamed of and more. Her inventory is incredible - she has really unique vintage pieces that you won't find anywhere else. I can't wait to use her again for our spring pics!",
+        "source": "Facebook Review",
+        "date": "11/15/2019"
+    },
+    {
+        "image": "images/reviewer-8.webp",
+        "name": "Sara W.",
+        "review": "Tiffanie puts her heart and soul into her flower arrangements, she did all the flowers at my wedding, absolutely beautiful! She even added unique little touches to match my personality. Love her work!",
+        "source": "Facebook Review",
+        "date": "2/7/2019"
+    },
+    {
+        "image": "images/reviewer-stock.webp",
+        "name": "Desiree Francy",
+        "review": "We rented studio space for my daughter’s birthday pictures. Her options for backgrounds and props were amazing. The owner was very accommodating and great to collaborate with. I highly recommend The Velvet Willow!",
+        "source": "Google Review",
+        "date": "2/7/2021"
+    },
+    {
+        "image": "images/reviewer-stock.webp",
+        "name": "Bailey W.",
+        "business": "The KNOT",
+        "review": "I hired The Velvet Willow to decorate my fall wedding! Tiffanie has a great eye for design and has a vast and beautiful collection of antique, vintage, and new items available for rent. She did an amazing job designing my wedding and I got so many compliments on how beautiful everything was. ",
+        "source": "The KNOT Review",
+        "date": "8/3/2022"
+    },
+    {
+        "image": "images/reviewer-stock.webp",
+        "name": "Chelsea R.",
+        "review": "Amazing decor! A must-have for any of my future events. Our photos came out incredible. Thank you Velvet Willow!!",
+        "source": "Google Review",
+        "date": "6/6/2020"
+    }
+]
