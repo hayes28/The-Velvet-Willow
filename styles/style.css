@@ -8,6 +8,7 @@
     src: url(fonts/Saira-Regular.ttf) format('truetype');
 }
 
+
 :root {
     --main-color: #B38741;
     --opacity-value: 0.9;
@@ -71,6 +72,18 @@ p {
 }
 
 .services p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.faqs p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: black;
+}
+
+.contact p {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
     color: black;
@@ -179,6 +192,26 @@ p {
     font-size: 22px;
     line-height: 34px;
     margin-bottom: 22px;
+    position: relative;
+}
+
+.review-text p::before {
+    content: '“';
+    /* Opening quote */
+    font-size: 40px;
+    /* Adjust the size as needed */
+    position: absolute;
+    left: -20px;
+    /* Adjust the position as needed */
+    top: 0;
+}
+
+.review-text p::after {
+    content: '”';
+    /* Closing quote */
+    font-size: 40px;
+    /* Adjust the size as needed */
+    position: absolute;
 }
 
 .review-text h4 {
@@ -196,11 +229,13 @@ p {
 }
 
 .reviews .carousel-control-prev {
-    left: -60px; /* Adjust as needed */
+    left: -60px;
+    /* Adjust as needed */
 }
 
 .reviews .carousel-control-next {
-    right: -60px; /* Adjust as needed */
+    right: -60px;
+    /* Adjust as needed */
 }
 
 
@@ -230,4 +265,63 @@ p {
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* FAQS */
+
+.faqs {
+    background-color: var(--main-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* .faqs .accordion-item {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    padding: 0;
+} */
+
+/* CONTACT NEXT STEPS */
+
+.contact {
+    background-color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Footer  */
+
+.footer {
+    background-color: var(--background-color);
+    height: 249px;
+}
+
+.footer .container {
+    height: 100%;
+}
+
+.footer .row {
+    height: 100%;
+}
+
+.footer .footer-item {
+    padding: 0;
+}
+
+.footer .social-item {
+    font-size: 30px;
+}
+
+.footer .social-item a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.footer .twitter-icon {
+    padding: 0 20px;
+}
+
+.footer .trademark {
+    padding-bottom: 39px;
 }
