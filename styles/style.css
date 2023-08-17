@@ -166,6 +166,42 @@ p {
     filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 }
 
+<<<<<<< HEAD
+/* ====================================
+=====================================*/
+/* VINTAGE VAULT */
+/* ====================================
+=====================================*/
+
+/* HEADER SECTION */
+
+.vintageVault-header {
+    background-size: cover;
+    background-position-y: -100px;
+}
+
+
+
+/* IMAGES */
+
+/* Reduce the margin between columns to make images touch */
+.row {
+    margin: -10px; /* Adjust as needed */
+}
+
+  /* Style for each image */
+.col-md-4 {
+    padding: 10px; /* Add some padding around each image */
+}
+
+  /* Increase image size */
+.img-fluid {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust the height as needed */
+    object-fit: cover; /* Maintain image aspect ratio while filling container */
+}
+=======
 /* REVIEWS */
 
 .reviews {
@@ -325,3 +361,4 @@ p {
 .footer .trademark {
     padding-bottom: 39px;
 }
+>>>>>>> main
