@@ -303,6 +303,7 @@ p {
 .vintageVault-header {
     background-size: cover;
     background-position-y: -100px;
+    background-color: var(--background-color);
 }
 
 
