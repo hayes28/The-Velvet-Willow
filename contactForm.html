@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="icon" href="./images/TVW-favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <script src="scripts.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark pt-4 px-0">
+                <button class="navbar-toggler border-0 align-self-start mt-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3" href="#">
+                    <img class="logo" src="./images/tifflogo.png" alt="navbar-logo" width="500px" height="500px
+                        class=" img-fluid" />
+                </a>
+                <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
+                    <ul class="navbar-nav ml-auto font-weight-bold">
+                        <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                            <a class="nav-link px-1" href="homepage.html">HOME</a>
+                        </li>
+                        <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                            <a class="nav-link px-1" href="create.html">CREATE LOUNGE</a>
+                        </li>
+                        <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                            <a class="nav-link px-1" href="VisionVault.html">VISION VAULT</a>
+                        <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                            <a class="nav-link px-1" href="FAQ.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class=">
+        <section id=" contactForm" class="contact-form pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form action="/submit" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    </main>
+    <footer class="footer d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row d-flex align-items-center flex-column flex-sm-row">
+                <div class="col footer-item d-flex justify-content-center justify-content-sm-start">
+                    <div class="footer-logo">
+                        <img src="images/tifflogo.png" alt="navbar-logo-text" width="114px" class="mr-4 img-fluid" />
+                    </div>
+                </div>
+                <div
+                    class="col d-flex align-items-end align-self-sm-end justify-content-center order-2 order-sm-0 footer-item">
+                    <div class="trademark text-muted">
+                        <span><em>©2019 The Velvet Willow</em></span>
+                    </div>
+                </div>
+                <div
+                    class="col d-flex align-items-center align-items-sm-end justify-content-center justify-content-sm-end footer-item">
+                    <div class="social">
+                        <ul class="social nav">
+                            <li class="social-item facebook-icon">
+                                <a href="https://www.facebook.com/thevelvetwillow/" class="social-link"
+                                    aria-label="Facebook"><span class="holberton_school-icon-ic_facebook"></span></a>
+                            </li>
+                            <li class="social-item instagram-icon">
+                                <a href="https://www.instagram.com/thevelvetwillow/" class="social-link"
+                                    aria-label="Instagram"><span class="holberton_school-icon-ic_instagram"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

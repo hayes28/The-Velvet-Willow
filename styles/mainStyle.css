@@ -1,19 +1,16 @@
-@font-face {
-    font-family: 'Dancing Script', sans-serif;
-    src: url(fonts/DancingScript-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Saira', sans-serif;
-    src: url(fonts/Saira-Regular.ttf) format('truetype');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&family=Saira+Condensed:wght@300&display=swap');
 
 :root {
-    --main-color: #B38741;
+    --font-family: 'Bebas Neue', sans-serif;
+    --font-family-second: 'Dancing Script', cursive;
+    --font-family: 'Roboto', sans-serif;
+    --font-family-main: 'Saira Condensed', sans-serif;
+    --main-color: #cca01d;
     --opacity-value: 0.9;
-    --background-color: #255742;
+    --background-color: #25574C;
     --color-white: #ffffff;
+    --color-black: #000000;
     --nav-line-height: 2px;
     --pros-padding: 62px;
     --reviews-arrows-pad: 300px;
@@ -33,6 +30,14 @@
     padding: 0;
 }
 
+/* body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-white);
+    background-color: var(--color-black);
+} */
+
 .logo {
     height: auto;
     /* maintain aspect ratio */
@@ -42,51 +47,79 @@
 .hero h1 {
     font-family: 'Dancing Script', sans-serif;
     font-size: 72px;
-    color: var(--main-color);
+    color: var(--color-black);
+}
+
+.hero p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-black);
 }
 
 .main h1 {
     font-family: 'Dancing Script', sans-serif;
     font-size: 72px;
-    color: black
+    color: var(--color-white);
 }
 
 .main h4 {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
-    color: black;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.services h4 {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--main-color);
     font-weight: bold;
 }
 
 p {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
-    color: var(--main-color);
+    color: var(--color-white);
+}
+
+
+.about {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .about p {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
-    color: black;
+    color: var(--color-white);
     font-weight: extra-light;
+}
+
+.services {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .services p {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
-    color: black;
+    color: var(--color-white);
 }
 
 .faqs p {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
-    color: black;
+    color: var(--color-white);
 }
 
 .contact p {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
-    color: black;
+    color: var(--color-white);
 }
 
 .section-header h2 {
@@ -113,8 +146,9 @@ p {
 .header .navbar-line1,
 .header .navbar-line2,
 .header .navbar-line3 {
-    background-color: var(--color-white);
-    height: var(--nav-line-height);
+    background-color: var(--color-black);
+    color: var(--color-black);
+    height: 2px;
     display: block;
     margin: 2px 0;
     /* Add some vertical margin */
@@ -149,7 +183,7 @@ p {
 .header .nav-link:after {
     content: "";
     display: block;
-    background-color: var(--color-white);
+    background-color: var(--color-black);
     width: 0;
     height: 2px;
     top: 4px;
@@ -176,11 +210,11 @@ p {
 .reviews .carousel-item img {
     width: 160px;
     border-radius: 75px;
-    margin: 100px;
+    margin: 10px;
 }
 
 .review-text {
-    padding-left: 53px;
+    padding: 10px 50px 20px;
 }
 
 .reviews .row [class*="col"] {
@@ -197,7 +231,7 @@ p {
 
 .review-text p::before {
     content: '“';
-    /* Opening quote */
+    /* Opening review */
     font-size: 40px;
     /* Adjust the size as needed */
     position: absolute;
@@ -208,7 +242,7 @@ p {
 
 .review-text p::after {
     content: '”';
-    /* Closing quote */
+    /* Closing review */
     font-size: 40px;
     /* Adjust the size as needed */
     position: absolute;
@@ -225,7 +259,7 @@ p {
 
 .carousel-control-prev img,
 .carousel-control-next img {
-    width: 40px;
+    width: 30px;
 }
 
 .reviews .carousel-control-prev {
@@ -240,11 +274,11 @@ p {
 
 
 .reviews .carousel-control-prev.arrow-left {
-    padding-right: 400px;
+    padding-right: 300px;
 }
 
 .reviews .carousel-control-next.arrow-right {
-    padding-left: 400px;
+    padding-left: 300px;
 }
 
 .loader {
@@ -267,28 +301,111 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+    .reviews .carousel-control-prev {
+        left: 10px; /* Adjust as needed */
+    }
+
+    .reviews .carousel-control-next {
+        right: 10px; /* Adjust as needed */
+    }
+
+    .carousel-control-prev img,
+    .carousel-control-next img {
+        width: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .review-text p {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 10px 50px 20px;
+    }
+    .review-text h4,
+    .review-text span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews .carousel-item img {
+        width: 120px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .review-text p::before {
+        left: -15px; /* Adjust as needed */
+        font-size: 30px; /* Adjust as needed */
+    }
+    .review-text p::after {
+        right: -15px; /* Adjust as needed */
+        font-size: 30px; /* Adjust as needed */
+    }
+}
+
+
+
+
 /* FAQS */
 
+
 .faqs {
-    background-color: var(--main-color);
+    background-color: var(--color-black);
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-/* .faqs .accordion-item {
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid var(--color-white);
+.faqs h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 100px;
+    color: var(--color-white);
+}
+
+.faqs h4 {
+    font-family: 'Saira', sans-serif;
+    font-size: 48px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.faqs p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
+}
+
+.faqs .container {
+    padding: 0;
+    text-align: center;
+}
+
+.faqs .row {
+    padding: 0;
+    justify-content: center;
+}
+
+.faqs .footer {
+    padding: 0;
+    align-self: flex-end;
+}
+
+/* .faqs .col-md-6 {
     padding: 0;
 } */
 
 /* CONTACT NEXT STEPS */
 
 .contact {
-    background-color: var(--color-white);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
 
 
 
@@ -300,10 +417,23 @@ p {
 
 /* HEADER SECTION */
 
-.vintageVault-header {
+.vision-vault {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.visionVault-header {
     background-size: cover;
     background-position-y: -100px;
     background-color: var(--background-color);
+}
+
+.vision h1 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 72px;
+    color: var(--main-color);
 }
 
 
@@ -321,12 +451,12 @@ p {
 }
 
   /* Increase image size */
-.img-fluid {
+/* .img-fluid {
     width: 100%;
     height: auto;
     max-height: 400px; /* Adjust the height as needed */
-    object-fit: cover; /* Maintain image aspect ratio while filling container */
-}
+    /*object-fit: cover; /* Maintain image aspect ratio while filling container */
+/*} */
 
 /* Footer  */
 
