@@ -2,55 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>The Velvet Willow</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Vault</title>
     <link rel="icon" href="./images/TVW-favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
-    <link rel="font" href="./fonts/DancingScript-VariableFont_wght.ttf"/>
     <!-- Bootstrap styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <script src="scripts.js"></script>
 </head>
-<body class="body">
+<body class="vision-vault body">
     <header class="header visionVault-header">
         <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light pt-5 px-0">
-                <button
-                class="navbar-toggler border-0 align-self-lg-start mt-3"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                >
-                <span class="navbar-line1"></span>
-                <span class="navbar-line2 my-1"></span>
-                <span class="navbar-line3"></span>
-            </button>
-            <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3" href="#">
-                <img class="logo" src="./images/tifflogo.png" alt="navbar-logo" width="500px" height="500px" class="img-fluid" />
-            </a>
-            <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
-                <ul class="navbar-nav ml-auto font-weight-bold">
-                    <li class="nav-item">
-                        <a class="nav-link text-white px-1" href="homepage.html">HOME</a>
-                    </li>
-                    <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
-                        <a class="nav-link text-white px-1" href="create.html">CREATE LOUNGE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white px-1" href="VisionVault.html">VISION VAULT</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="navbar navbar-expand-sm navbar-dark pt-4 px-0">
+                <button class="navbar-toggler border-0 align-self-start mt-3" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-line1"></span>
+                    <span class="navbar-line2 my-1"></span>
+                    <span class="navbar-line3"></span>
+                    <span class="navbar-line4 my-1"></span>
+                </button>
+                <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3" href="#">
+                    <img class="logo" src="./images/tifflogo.png" alt="navbar-logo" width="500px" height="500px
+                        class=" img-fluid" />
+                </a>
+                <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
+                    <ul class="navbar-nav ml-auto font-weight-bold">
+                        <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                            <a class="nav-link px-1" href="homepage.html">HOME</a>
+                        </li>
+                        <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                            <a class="nav-link px-1" href="create.html">CREATE LOUNGE</a>
+                        </li>
+                        <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                            <a class="nav-link px-1" href="VisionVault.html">VISION VAULT</a>
+                        <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
+                            <a class="nav-link px-1" href="FAQ.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
+        </div>
         </div>
     </header>
     <main>
-        <section class="align-items-center">
+        <section class="vision align-items-center">
             <div class="container-lg">
                 <div class="row">
                     <div class="col-lg-6 offset-lg-3 text-center">
@@ -352,8 +350,37 @@
             </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="footer d-flex align-items-center justify-content-center">
+        <div class="container">
+            <div class="row d-flex align-items-center flex-column flex-sm-row">
+                <div class="col footer-item d-flex justify-content-center justify-content-sm-start">
+                    <div class="footer-logo">
+                        <img src="images/tifflogo.png" alt="navbar-logo-text" width="114px" class="mr-4 img-fluid" />
+                    </div>
+                </div>
+                <div
+                    class="col d-flex align-items-end align-self-sm-end justify-content-center order-2 order-sm-0 footer-item">
+                    <div class="trademark text-muted">
+                        <span><em>©2019 The Velvet Willow</em></span>
+                    </div>
+                </div>
+                <div
+                    class="col d-flex align-items-center align-items-sm-end justify-content-center justify-content-sm-end footer-item">
+                    <div class="social">
+                        <ul class="social nav">
+                            <li class="social-item facebook-icon">
+                                <a href="https://www.facebook.com/thevelvetwillow/" class="social-link"
+                                    aria-label="Facebook"><span class="holberton_school-icon-ic_facebook"></span></a>
+                            </li>
+                            <li class="social-item instagram-icon">
+                                <a href="https://www.instagram.com/thevelvetwillow/" class="social-link"
+                                    aria-label="Instagram"><span class="holberton_school-icon-ic_instagram"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
