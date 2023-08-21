@@ -538,6 +538,35 @@ p {
     }
 }
 
+/* Position the cart icon container */
+.cart-icon-container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+/* Styling for the cart icon */
+.cart-icon {
+    color: var(--main-color); /* Change the color as needed */
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-right: 5px; /* Add some space between the icon and text */
+}
+
+/* Styling the "View Cart" link/button */
+a.nav-link.ml-auto {
+    color: var(--main-color); /* Bootstrap's primary color */
+    text-decoration: none;
+}
+
+/* Remove default Bootstrap padding from nav-link */
+.nav-link {
+    padding: 0;
+}
+
+/* Optional: Increase spacing between nav items */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Adjust as needed */
+}
+
 
 
 
