@@ -1,3 +1,4 @@
+
 // REVIEW SECTION
 function createReviewSlide(review) {
     const { image, name, business, review: reviewContent, source, date } = review; // Rename reviewText to reviewContent
@@ -16,13 +17,12 @@ function createReviewSlide(review) {
     if (business) {
         const span = $('<span>').addClass('text-white').text(business).appendTo(reviewTextDiv);
     }
-	const src = $('<span>').addClass('text-muted').text(source).appendTo(reviewTextDiv); // Source
-	const spaceSpan = $('<span>').addClass('text-muted').text(' ').appendTo(reviewTextDiv); // Space
-	const dt = $('<span>').addClass('text-muted').text(date).appendTo(reviewTextDiv); // Date
+    const src = $('<span>').addClass('text-muted').text(source).appendTo(reviewTextDiv); // Source
+    const spaceSpan = $('<span>').addClass('text-muted').text(' ').appendTo(reviewTextDiv); // Space
+    const dt = $('<span>').addClass('text-muted').text(date).appendTo(reviewTextDiv); // Date
 
     return slide;
 }
-
 
 $(function () {
     let loader = $('.loader');
@@ -41,5 +41,3 @@ $(function () {
         });
     });
 });
-
-
