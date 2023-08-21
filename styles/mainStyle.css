@@ -6,7 +6,7 @@
     --font-family-second: 'Dancing Script', cursive;
     --font-family: 'Roboto', sans-serif;
     --font-family-main: 'Saira Condensed', sans-serif;
-    --main-color: #cca01d;
+    --main-color: #ad8201;
     --opacity-value: 0.9;
     --background-color: #25574C;
     --color-white: #ffffff;
@@ -436,27 +436,75 @@ p {
     color: var(--main-color);
 }
 
+/* categories */
 
-
-/* IMAGES */
-
-/* Reduce the margin between columns to make images touch */
-.row {
-    margin: -10px; /* Adjust as needed */
+/* Style for the categories section */
+.categories {
+    padding: 50px 0;
+    text-align: center;
 }
 
-  /* Style for each image */
-.col-md-4 {
-    padding: 10px; /* Add some padding around each image */
+/* Style for the category links */
+.category-link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-  /* Increase image size */
-/* .img-fluid {
-    width: 100%;
-    height: auto;
-    max-height: 400px; /* Adjust the height as needed */
-    /*object-fit: cover; /* Maintain image aspect ratio while filling container */
-/*} */
+.category-link img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-link p {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: var(--font-family-second);
+    color: var(--main-color);
+}
+
+.category-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-link:hover img {
+    transform: scale(1.05);
+}
+
+/* Styling for the subcategories section */
+.subcategories {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+/* Styling for the subcategory heading */
+.subcategory-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling for the subcategory links */
+.subcategory-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.subcategory-link:hover {
+    background-color: #f0f0f0;
+}
+
 
 /* Footer  */
 

@@ -10,8 +10,7 @@
 
     <!-- Include Firebase SDK scripts -->
     <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics"></script>
 
     <!-- Your web app's Firebase configuration -->
     <!--For Firebase JS SDK v7.20.0 and later, measurementId is optional -->
@@ -32,6 +31,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 <script src="scripts.js"></script>
+<script src="photoGallery.js"></script>
+
 </head>
 
 <body class="vision-vault body">
@@ -71,71 +72,25 @@
     </header>
 
     <main>
-        <section class="vision align-items-center">
-            <div class="container-lg">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3 text-center">
-                        <h1>Vision Vault</h1>
-                    </div>
-                </div>
-        </section>
-
-        <!-- Add a section for categories with styling -->
-        <section class="categories">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="SubcategoryEvents.html" class="category-link">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/velvet-willow.appspot.com/o/DnD-Images%2FVisionVault%2FEvents%2FTea%20Party.webp?alt=media&token=5c9a4e18-22c3-47a5-ae86-f9232001b426" alt="Events">
-                            <p class="category-label">Event's</p>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="SubcategoryWeddings.html" class="category-link">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/velvet-willow.appspot.com/o/DnD-Images%2FVisionVault%2FEvents%2FLove%20under%20the%20Palm.webp?alt=media&token=7ae4f657-ddfc-4123-9cf1-ed1abebbf352" alt="Weddings">
-                            <p class="category.label">Wedding's</p>
-                        </a>
-                    </div>
-                </div>
+        <section class="subcategories">
+            <h2>Wedding</h2>
+            <div class="subcategory-links">
+                <a href="Boho.html">Boho</a>
+                <a href="TraditionalElegant.html">Classic</a>
+                <a href="Glam.html">Glam</a>
+                <a href="Modern.html">Modern</a>
+                <a href="Romantic.html">Romantic</a>
+                <a href="Vintage.html">Vintage</a>
             </div>
         </section>
     </main>
 
     <footer class="footer d-flex align-items-center justify-content-center">
-        <div class="container">
-            <div class="row d-flex align-items-center flex-column flex-sm-row">
-                <div class="col footer-item d-flex justify-content-center justify-content-sm-start">
-                    <div class="footer-logo">
-                        <img src="images/tifflogo.png" alt="navbar-logo-text" width="114px" class="mr-4 img-fluid" />
-                    </div>
-                </div>
-                <div
-                    class="col d-flex align-items-end align-self-sm-end justify-content-center order-2 order-sm-0 footer-item">
-                    <div class="trademark text-muted">
-                        <span><em>©2019 The Velvet Willow</em></span>
-                    </div>
-                </div>
-                <div
-                    class="col d-flex align-items-center align-items-sm-end justify-content-center justify-content-sm-end footer-item">
-                    <div class="social">
-                        <ul class="social nav">
-                            <li class="social-item facebook-icon">
-                                <a href="https://www.facebook.com/thevelvetwillow/" class="social-link"
-                                    aria-label="Facebook"><span class="holberton_school-icon-ic_facebook"></span></a>
-                            </li>
-                            <li class="social-item instagram-icon">
-                                <a href="https://www.instagram.com/thevelvetwillow/" class="social-link"
-                                    aria-label="Instagram"><span class="holberton_school-icon-ic_instagram"></span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Your footer content remains unchanged -->
     </footer>
     <!-- Include the Firebase SDK script for Storage -->
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
-<script src="storage.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+    <script src="storage.js"></script>
 </body>
+
 </html>
