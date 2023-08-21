@@ -303,11 +303,13 @@ p {
 
 @media (max-width: 768px) {
     .reviews .carousel-control-prev {
-        left: 10px; /* Adjust as needed */
+        left: 10px;
+        /* Adjust as needed */
     }
 
     .reviews .carousel-control-next {
-        right: 10px; /* Adjust as needed */
+        right: 10px;
+        /* Adjust as needed */
     }
 
     .carousel-control-prev img,
@@ -323,6 +325,7 @@ p {
         line-height: 28px;
         padding: 10px 50px 20px;
     }
+
     .review-text h4,
     .review-text span {
         font-size: 18px;
@@ -338,12 +341,17 @@ p {
 
 @media (max-width: 768px) {
     .review-text p::before {
-        left: -15px; /* Adjust as needed */
-        font-size: 30px; /* Adjust as needed */
+        left: -15px;
+        /* Adjust as needed */
+        font-size: 30px;
+        /* Adjust as needed */
     }
+
     .review-text p::after {
-        right: -15px; /* Adjust as needed */
-        font-size: 30px; /* Adjust as needed */
+        right: -15px;
+        /* Adjust as needed */
+        font-size: 30px;
+        /* Adjust as needed */
     }
 }
 
@@ -400,10 +408,134 @@ p {
 /* CONTACT NEXT STEPS */
 
 .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--color-black);
     color: var(--color-white);
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-btn {
+    font-size: 19px;
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    padding: 12px 20px;
+    background-color: var(--main-color);
+    color: var(--color-black);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-bottom: 3px solid #cca01d;
+}
+
+.contact-btn:hover {
+    background-color: var(--color-black);
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.contact-btn:active {
+    background-color: var(--color-black);
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    text-align: left; /* Change this line */
+    font-size: 25px;
+    margin: 0 auto; /* Center the entire form on the page */
+}
+
+.form-group label {
+    width: 80%; /* or any desired width */
+    white-space: normal;
+}
+
+.custom-checkbox .form-check-input {
+    display: none;
+}
+
+.custom-checkbox .form-check-label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--color-white);
+    font-weight: 300;
+    width: 100%; /* this will use the full width available */
+    white-space: normal; /* this will allow the text to wrap to the next line */
+}
+
+.custom-checkbox .form-check-label:before,
+.custom-checkbox .form-check-label:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    /* Border color */
+    background-color: transparent;
+}
+
+.custom-checkbox .form-check-input:checked+.form-check-label:after {
+    background-color: #ff9900;
+    /* Checked background color */
+}
+
+.custom-checkbox .form-check-label:after {
+    left: 4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    display: none;
+}
+
+.custom-checkbox .form-check-input:checked+.form-check-label:after {
+    display: block;
+}
+
+
+.disclaimer {
+    font-size: 20px !important;
+    color: var(--color-white);
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .custom-checkbox .form-check-label {
+        font-size: 14px; /* You can adjust this value as needed */
+    }
+
+    .form-check-input {
+        width: 16px;
+        height: 16px;
+    }
+    .form-group {
+        padding: 10px; /* Adjust as needed */
+    }
+
+    .custom-checkbox .form-check-label {
+        padding-left: 40px; /* Adjust to align checkboxes and labels */
+    }
+
+    .contact-form {
+        padding: 20px; /* Add padding around the entire form if needed */
+    }
 }
 
 
@@ -442,20 +574,22 @@ p {
 
 /* Reduce the margin between columns to make images touch */
 .row {
-    margin: -10px; /* Adjust as needed */
+    margin: -10px;
+    /* Adjust as needed */
 }
 
-  /* Style for each image */
+/* Style for each image */
 .col-md-4 {
-    padding: 10px; /* Add some padding around each image */
+    padding: 10px;
+    /* Add some padding around each image */
 }
 
-  /* Increase image size */
+/* Increase image size */
 /* .img-fluid {
     width: 100%;
     height: auto;
     max-height: 400px; /* Adjust the height as needed */
-    /*object-fit: cover; /* Maintain image aspect ratio while filling container */
+/*object-fit: cover; /* Maintain image aspect ratio while filling container */
 /*} */
 
 /* Footer  */
