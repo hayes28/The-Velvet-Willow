@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <link rel="icon" href="./images/TVW-favicon.png" type="image/x-icon" />
+    <link rel="icon" href="./images/LOGOnobg-sm.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
     <link rel="stylesheet" href="./styles/styles.css">
-
+    <!-- Include Firebase SDK scripts -->
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
     <script type="module" src="./velvet-willow/src/config/firebase.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -57,200 +57,19 @@
         <p>Send a message and we will get back to you within 24 hours.</p>
         <form class="contact-form">
             <label for="">Full Name</label><br />
-            <input class="form-control" type="text" placeholder="Your name" required /><br />
+            <input class="form-control fullName" type="text" placeholder="Your name" required /><br />
             <label for="">Email</label><br />
-            <input class="form-control" type="email" placeholder="E.g. myemail@email.com" required /><br />
-            <label for="">When is your Event?</label><br />
-            <input class="form-control" type="date" name="date" placeholder=""><br />
-            <label for="">Venue Location</label><br />
-            <input class="form-control" type="text" placeholder="E.g. 742 Evergreen Terrace, Springfield"
-                required /><br />
-            <label for="">What is your estimated headcount for the event?</label><br />
-            <input class="form-control" type="text" placeholder="" required /><br />
-            <label>Are you interested in renting our Studio Space or do you have an event you need help with?</label>
-            <div class="form-check custom-checkbox">
-                <input class="form-check-input" type="checkbox" id="studioSpace" value="Studio Space">
-                <label class="form-check-label text-white" for="studioSpace">Studio Space</label>
-            </div>
-            <div class="form-check custom-checkbox">
-                <input class="form-check-input" type="checkbox" id="eventStyling" value="Event Styling and Rentals">
-                <label class="form-check-label text-white" for="eventStyling">Event Styling and Rentals</label>
-            </div>
-            <p class="disclaimer" style="font-style: italic; color: rgb(130, 130, 130);">If you are interested in
-                renting our fully furnished studio stop here. <br />If you have an event, please continue with the
-                questions.</p>
-            </div>
-            <label for="">Are you interested in lounge seating for your event?</label><br />
-            <input class="form-control" type="text" placeholder="" required /><br />
-            <div class="form-group">
-                <label class="text-white">Please check the following boxes that you would like to learn more
-                    about.</label>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="tablescapingDecor" value="Tablescaping decor">
-                    <label class="form-check-label text-white" for="tablescapingDecor">Tablescaping decor</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="sweetheartTable"
-                        value="Sweetheart Table design">
-                    <label class="form-check-label text-white" for="sweetheartTable">Sweetheart Table design</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="ceremonydesigns" value="Ceremony Designs">
-                    <label class="form-check-label text-white" for="ceremonydesigns">Ceremony Designs</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="desserttabledesignse"
-                        value="Dessert Table Designs">
-                    <label class="form-check-label text-white" for="desserttabledesignse">Dessert Table Designs</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="signage"
-                        value="Are you interested in signage (welcome sign, menu, specialty drink)">
-                    <label class="form-check-label text-white" for="signage">Are you interested in signage (welcome
-                        sign, menu, specialty drink)</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="welcome" value="Welcome Designs">
-                    <label class="form-check-label text-white" for="welcome">Welcome Designs</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="glassware" value="Vintage Glassware (Goblets)">
-                    <label class="form-check-label text-white" for="glassware">Vintage Glassware (Goblets)</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="customcreations" value="Custom Creations">
-                    <label class="form-check-label text-white" for="customcreations">Custom Creations</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="upgrades"
-                        value="Groom and Bridal Suite upgrades">
-                    <label class="form-check-label text-white" for="upgrades">Groom and Bridal Suite upgrades</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="fullService" value="Full Service Package">
-                    <label class="form-check-label text-white" for="fullService">Full Service Package</label>
-                </div>
-            </div>
-            <br />
-            <label for="">What are your colors?</label><br />
-            <input class="form-control" type="text" placeholder="" required /><br />
-            <label for="">What is your budget? (I ask because I have $500 clients and $20,000 clients)</label><br />
-            <input class="form-control" type="text" placeholder="" required /><br />
-            <label for="">Are you interested in lounge seating for your event?</label><br />
-            <input class="form-control" type="text" placeholder="" required /><br />
-            <div class="form-group">
-                <label class="text-white">Your dream wedding design is based off of which of these styles? Check all
-                    that apply!</label>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="traditionalelegant"
-                        value="Traditional elegant (Bridgerton Inspired)">
-                    <label class="form-check-label text-white" for="traditionalelegant">Traditional elegant (Bridgerton
-                        Inspired)</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="modernsimplesleek"
-                        value="Modern/ Simple/ Sleek">
-                    <label class="form-check-label text-white" for="modernsimplesleek">Modern/ Simple/ Sleek</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="fairytale" value="Whimsical/ Fairytale">
-                    <label class="form-check-label text-white" for="fairytale">Whimsical/ Fairytale</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="natureinspired"
-                        value="Secret Garden/ Nature Inspired">
-                    <label class="form-check-label text-white" for="natureinspired">Secret Garden/ Nature
-                        Inspired</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="rusticboho" value="Rustic Boho">
-                    <label class="form-check-label text-white" for="rusticboho">Rustic Boho</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="colorful" value="Colorful/ Modern Art">
-                    <label class="form-check-label text-white" for="colorful">Colorful/ Modern Art</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="rocker" value="Rocker /Disco/ Glam">
-                    <label class="form-check-label text-white" for="rocker">Rocker /Disco/ Glam</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="celestial"
-                        value="Midnight Blue and Gold Celestial Theme">
-                    <label class="form-check-label text-white" for="celestial">Midnight Blue and Gold Celestial
-                        Theme</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="stormy" value="Dark and Stormy/ Moody">
-                    <label class="form-check-label text-white" for="stormy">Dark and Stormy/ Moody</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="bold" value="Bold/Jewel Toned/ Moroccan">
-                    <label class="form-check-label text-white" for="bold">Bold/Jewel Toned/ Moroccan</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="bohemian"
-                        value="Traditional Bohemian (Rattan, rich patterns, bright colors, plants, Persian rugs)">
-                    <label class="form-check-label text-white" for="bohemian">Traditional Bohemian (Rattan, rich
-                        patterns, bright colors plants, Persian rugs) </label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="glam" value="Glam/ Elegant/ Chic">
-                    <label class="form-check-label text-white" for="glam">Glam/ Elegant/ Chic</label>
-                </div>
-                <div class="form-check custom-checkbox">
-                    <input class="form-check-input" type="checkbox" id="minimal" value="Neutral Minimalist">
-                    <label class="form-check-label text-white" for="minimal">Neutral Minimalist</label>
-                </div>
-            </div>
-            <br />
-            <label for="">Tell us more about your goals </label><br />
-            <textarea class="form-control" name="" id="" cols="30" rows="10"
-                placeholder="What do I need to know?"></textarea><br />
-            <div class="form-group">
-                <label class="text-white" for="select">How did you hear about us? </label>
-                <select class="form-control" id="select">
-                    <option value="option1">Personal Website</option>
-                    <option value="option2">Google</option>
-                    <option value="option3">Facebook</option>
-                    <option value="option4">Instagram</option>
-                    <option value="option5">Tulsa Wedding Show</option>
-                    <option value="option6">The Knot</option>
-                    <option value="option7">Wedding Wire</option>
-                    <option value="option8">Friend</option>
-                    <option value="option9">Facebook Marketplace</option>
-                    <option value="option10">Venue Open House</option>
-                    <option value="option11">Email Marketing</option>
-                    <option value="option12">Facebook Group</option>
-                    <option value="option13">Vendor Referral</option>
-                    <option value="option14">Client Referral</option>
-                    <option value="option15">Other</option>
-                    <option value="option16">Unknown</option>
-                </select>
-            </div>
-            <br />
-            <label>Next Steps: Would you like to.....</label>
-            <div class="form-check custom-checkbox">
-                <input class="form-check-input" type="checkbox" id="person" value="Set up a meeting to discuss your vision at our fabulous showroom">
-                <label class="form-check-label text-white" for="person">Set up a meeting to discuss your vision at our fabulous showroom</label>
-            </div>
-            <div class="form-check custom-checkbox">
-                <input class="form-check-input" type="checkbox" id="call" value="Set up a call to review your needs">
-                <label class="form-check-label text-white" for="call">Set up a call to review your needs</label>
-            </div>
-            <br />
-            <label for="">Please provide the time for the meeting or call. </label><br />
-            <textarea class="form-control" name="" id="" placeholder=""></textarea><br />
-            <br />
-            <label for="">What date would you like to meet?</label><br />
-            <input class="form-control" type="date" name="date" placeholder=""><br />
+            <input class="form-control email" type="email" placeholder="E.g. myemail@email.com"  /><br />
+            <label for="">Phone Number</label><br />
+            <input class="form-control number" type="tel" placeholder="E.g. 123-456-7890" /><br />
+            <label for="">Event Date</label><br />
+            <input class="form-control eventDate" type="date" placeholder="E.g. 01/01/2021" /><br />
+            <label for="">Message</label><br />
+            <textarea class="form-control message" type="text" row="30" cols="10" placeholder="" ></textarea><br />
             <p class="" style="font-style: italic; color: rgb(255, 255, 255);">If you have a Pinterest board, we would love to see it. Please feel free to invite us to your inspiration board at tiffanietippens@gmail.com or @tiffanietippens
                 We look forward to working with you to bring your vision to life! .</p>
-
             <button class="contact-btn" type="submit">Submit</button>
         </form>
-
-
     </main>
     <footer class="footer d-flex align-items-center justify-content-center">
         <div class="container">

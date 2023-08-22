@@ -1,4 +1,3 @@
-
 const firebaseConfig = {
   apiKey: "AIzaSyABqHximBaL6M1sBnHENryip1QyC6qgaV4",
   authDomain: "velvet-willow.firebaseapp.com",
@@ -13,34 +12,33 @@ const firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-// Refernece contactInfo collections
+// Reference contactInfo collections
 let contactInfo = firebase.database().ref("infos");
 
+function saveContactInfo(fullName, email, phoneNumber, eventDate, message) {
+    let newContactInfo = contactInfo.push();
 
-// Listen for a submit
-document.querySelector(".contact-form").addEventListener("submit", submitForm);
+    newContactInfo.set({
+        fullName: fullName,
+        email: email,
+        phoneNumber: phoneNumber,
+        eventDate: eventDate,
+        message: message,
+    });
 
-function submitForm(e) {
-  e.preventDefault();
-
-  //   Get input Values
-  let name = document.querySelector(".name").value;
-  let email = document.querySelector(".email").value;
-  let message = document.querySelector(".message").value;
-  console.log(name, email, message);
-
-  saveContactInfo(name, email, message);
-
-  document.querySelector(".contact-form").reset();
+    alert("Your message has been submitted!");
 }
+document.querySelector('.contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
 
-// Save infos to Firebase
-function saveContactInfo(name, email, message) {
-  let newContactInfo = contactInfo.push();
+    let fullName = document.querySelector('.form-control.fullName').value;
+    let email = document.querySelector('.form-control.email').value;
+    let phoneNumber = document.querySelector('.form-control.number').value;
+    let eventDate = document.querySelector('.form-control.eventDate').value;
+    let message = document.querySelector('.form-control.message').value;
 
-  newContactInfo.set({
-    name: name,
-    email: email,
-    message: message,
-  });
-}
+  saveContactInfo(fullName, email, phoneNumber, eventDate, message);
+
+  // Reset the form after submission
+  document.querySelector('.contact-form').reset();
+});
