@@ -8,16 +8,20 @@
     <link rel="icon" href="./images/TVW-favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
 
-    <!-- Include Firebase SDK scripts -->
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
-    <script type="module" src="./velvet-willow/src/config/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-storage.js"></script>
+    <script src="./velvet-willow/src/config/firebase.js"></script>
 
-    <!-- Bootstrap styling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-<script src="scripts.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/VisionVault.js"></script>
 </head>
 
 <body class="vision-vault body">
@@ -32,7 +36,8 @@
                     <span class="navbar-line3"></span>
                     <span class="navbar-line4 my-1"></span>
                 </button>
-                <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3" href="#">
+                <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3"
+                    href="homepage.html">
                     <img class="logo" src="./images/tifflogo.png" alt="navbar-logo" width="500px" height="500px
                         class=" img-fluid" />
                 </a>
@@ -53,7 +58,6 @@
                 </div>
             </nav>
         </div>
-        </div>
     </header>
 
     <main>
@@ -66,25 +70,17 @@
                 </div>
         </section>
 
-        <!-- Add a section for categories with styling -->
-        <section class="categories">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <a href="SubcategoryEvents.html" class="category-link">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/velvet-willow.appspot.com/o/DnD-Images%2FVisionVault%2FEvents%2FTea%20Party.webp?alt=media&token=5c9a4e18-22c3-47a5-ae86-f9232001b426" alt="Events">
-                            <p class="category-label">Event's</p>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="SubcategoryWeddings.html" class="category-link">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/velvet-willow.appspot.com/o/DnD-Images%2FVisionVault%2FEvents%2FLove%20under%20the%20Palm.webp?alt=media&token=7ae4f657-ddfc-4123-9cf1-ed1abebbf352" alt="Weddings">
-                            <p class="category.label">Wedding's</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="category" id="eventsCategory">
+            <img class="thumbnail" id="eventsThumbnail" src="" alt="Events Thumbnail" />
+            <div class="content" id="eventsContent" style="display:none;"></div>
+        </div>
+        <div class="category" id="weddingsCategory">
+            <img class="thumbnail" id="weddingsThumbnail" src="" alt="Weddings Thumbnail" />
+            <div class="content" id="weddingsContent" style="display:none;"></div>
+        </div>
+
+
+
     </main>
 
     <footer class="footer d-flex align-items-center justify-content-center">
@@ -120,8 +116,6 @@
         </div>
     </footer>
     <!-- Include the Firebase SDK script for Storage -->
-<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
-<script src="storage.js"></script>
-
 </body>
+
 </html>
