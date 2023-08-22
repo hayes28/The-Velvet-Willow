@@ -1,4 +1,3 @@
-
 // REVIEW SECTION
 function createReviewSlide(review) {
     const { image, name, business, review: reviewContent, source, date } = review; // Rename reviewText to reviewContent
