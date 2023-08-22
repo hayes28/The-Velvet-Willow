@@ -40,6 +40,7 @@
 
 .logo {
     height: auto;
+    border: #ad8201 solid 2px;
     /* maintain aspect ratio */
 }
 
@@ -80,6 +81,33 @@ p {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
     color: var(--color-white);
+}
+
+.vision-vault h4 {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.vision-vault .rwe-list-item__link {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-black);
+    font-weight: bold;
+    text-decoration: none;
+    border: #ad8201 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.vision-vault a:hover {
+    color: var(--main-color) !important;
+    text-decoration: none;
 }
 
 
@@ -453,13 +481,16 @@ p {
     justify-content: center;
     align-items: center;
     max-width: 600px;
-    text-align: left; /* Change this line */
+    text-align: left;
+    /* Change this line */
     font-size: 25px;
-    margin: 0 auto; /* Center the entire form on the page */
+    margin: 0 auto;
+    /* Center the entire form on the page */
 }
 
 .form-group label {
-    width: 80%; /* or any desired width */
+    width: 80%;
+    /* or any desired width */
     white-space: normal;
 }
 
@@ -475,8 +506,10 @@ p {
     line-height: 27px;
     color: var(--color-white);
     font-weight: 300;
-    width: 100%; /* this will use the full width available */
-    white-space: normal; /* this will allow the text to wrap to the next line */
+    width: 100%;
+    /* this will use the full width available */
+    white-space: normal;
+    /* this will allow the text to wrap to the next line */
 }
 
 .custom-checkbox .form-check-label:before,
@@ -518,23 +551,28 @@ p {
 
 @media (max-width: 768px) {
     .custom-checkbox .form-check-label {
-        font-size: 14px; /* You can adjust this value as needed */
+        font-size: 14px;
+        /* You can adjust this value as needed */
     }
 
     .form-check-input {
         width: 16px;
         height: 16px;
     }
+
     .form-group {
-        padding: 10px; /* Adjust as needed */
+        padding: 10px;
+        /* Adjust as needed */
     }
 
     .custom-checkbox .form-check-label {
-        padding-left: 40px; /* Adjust to align checkboxes and labels */
+        padding-left: 40px;
+        /* Adjust to align checkboxes and labels */
     }
 
     .contact-form {
-        padding: 20px; /* Add padding around the entire form if needed */
+        padding: 20px;
+        /* Add padding around the entire form if needed */
     }
 }
 
@@ -570,72 +608,117 @@ p {
 
 /* categories */
 
-/* Style for the categories section */
-.categories {
-    padding: 50px 0;
-    text-align: center;
+/* .rwe-list-item__link {
+    display: block;
+    text-decoration: none;
+    color: #333;
+} */
+
+.rwe-list-item__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
 }
 
+.rwe-list-item__title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content {
+    display: none;
+    /* Initially hidden */
+}
+
+/* .rwe-list-item__link:hover .content {
+    display: block;
+    /* Show when hovered */
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    padding: 10px 10px 10px 10px;
+}
+
+.pg-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+/* Style for the categories section */
+/* .categories {
+    padding: 50px 0;
+    text-align: center;
+} */
+
 /* Style for the category links */
-.category-link {
+/* .category-link {
     display: block;
     text-decoration: none;
     color: #333;
     margin-bottom: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
-}
+} */
 
-.category-link img {
+/* .category-link img {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-}
+} */
 
-.category-link p {
+/* .category-link p {
     margin-top: 10px;
     font-weight: bold;
     font-size: 35px;
     font-family: var(--font-family-second);
     color: var(--main-color);
-}
+} */
 
-.category-link:hover {
+/* .category-link:hover {
     transform: translateY(-5px);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.category-link:hover img {
+/* .category-link:hover img {
     transform: scale(1.05);
-}
+} */
 
 /* Styling for the subcategories section */
-.subcategories {
+/* .subcategories {
     margin: 20px 0;
     padding: 20px;
     background-color: var(--background-color);
-}
+} */
 
 /* Styling for the subcategory heading */
-.subcategory-heading {
+/* .subcategory-heading {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-}
+} */
 
 /* Styling for the subcategory links */
-.subcategory-link {
+/* .subcategory-link {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
     transition: background-color 0.3s ease;
-}
+} */
 
-.subcategory-link:hover {
+/* .subcategory-link:hover {
     background-color: #f0f0f0;
-}
+} */
 
 /* Footer  */
 
