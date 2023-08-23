@@ -2,6 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&family=Saira+Condensed:wght@300&display=swap');
 
 :root {
+  --font-family: "Bebas Neue", sans-serif;
+  --font-family-second: "Dancing Script", cursive;
+  --font-family: "Roboto", sans-serif;
+  --font-family-main: "Saira Condensed", sans-serif;
+  --main-color: #ad8201;
+  --opacity-value: 0.9;
+  --background-color: #25574c;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --nav-line-height: 2px;
+  --pros-padding: 62px;
+  --reviews-arrows-pad: 300px;
+  --popular-arrows-x: -6vw;
+  --smile-p-margin: 20px;
+  --faq-pad-outer: 7vw;
     --font-family-second: 'Dancing Script', cursive;
     --font-family-main: 'Saira Condensed', sans-serif;
     --main-color: #ad8201;
@@ -60,10 +75,17 @@
     font-weight: bold;
 }
 
+.services h4 {
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+
 p {
-    font-family: 'Saira', sans-serif;
-    font-size: 24px;
-    color: var(--color-white);
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: var(--color-white);
 }
 
 
@@ -74,6 +96,78 @@ p {
     font-size: 14px;
     border-radius: 22px;
     filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+.vision-vault h4 {
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+.vision-vault .rwe-list-item__link {
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: var(--color-black);
+  font-weight: bold;
+  text-decoration: none;
+  border: #ad8201 solid 2px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.vision-vault a:hover {
+  color: var(--main-color) !important;
+  text-decoration: none;
+}
+
+.about {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about p {
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: var(--color-white);
+  font-weight: extra-light;
+}
+
+.services {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.services p {
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.faqs p {
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.contact p {
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.section-header h2 {
+  font-weight: 300;
+}
+
+.section-header span {
+  font-weight: bold;
 }
 
 .btn:hover,
@@ -146,6 +240,13 @@ p {
     color: var(--color-white);
     padding-top: 100px;
     padding-bottom: 100px;
+.btn.btn-smile {
+  background-color: var(--main-color);
+  width: 162px;
+  height: 44px;
+  font-size: 14px;
+  border-radius: 22px;
+  filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 }
 
 .about p {
@@ -313,6 +414,49 @@ p {
         /* Adjust as needed */
     }
 }
+
+/* FAQS */
+/* ====================================
+=====================================*/
+/* SERVICES SECTION */
+/* ====================================
+=====================================*/
+
+.services h4 {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.services {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
+}
+
+.section-header h2 {
+    font-weight: 300;
+}
+
+.section-header span {
+    font-weight: bold;
+}
+
+
+
+/* ====================================
+=====================================*/
+/* FAQS PAGE */
+/* ====================================
+=====================================*/
 
 /* ====================================
 =====================================*/
@@ -550,6 +694,47 @@ p {
     }
 }
 
+/* Position the cart icon container */
+.cart-icon-container {
+  display: flex;
+  align-items: center; /* Vertically align items */
+}
+
+/* Styling for the cart icon */
+.cart-icon {
+  color: var(--color-black); /* Change the color as needed */
+  font-size: 20px; /* Adjust the font size as needed */
+  margin-right: 5px; /* Add some space between the icon and text */
+  transition: color 0.3s;
+}
+
+/* Change icon color on hover */
+.cart-icon:hover {
+  color: var(--main-color);
+}
+
+/* Styling the "View Cart" link/button */
+a.nav-link.ml-auto {
+  color: var(--color-black); /* Bootstrap's primary color */
+  text-decoration: none;
+  transition: color 0,3s;
+}
+
+/* Change link color on hover */
+a.nav-link.ml-auto:hover {
+  color: var(--main-color);
+}
+
+/* Remove default Bootstrap padding from nav-link */
+.nav-link {
+  padding: 0;
+}
+
+/* Optional: Increase spacing between nav items */
+.navbar-nav .nav-item {
+  margin-right: 20px; /* Adjust as needed */
+}
+
 
 /* ====================================
 =====================================*/
@@ -564,6 +749,11 @@ p {
     font-weight: bold;
 }
 
+.vision-vault {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-top: 100px;
+  padding-bottom: 100px;
 .vision-vault .rwe-list-item__link {
     font-family: 'Saira', sans-serif;
     font-size: 24px;
@@ -662,12 +852,32 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+/* .rwe-list-item__link:hover .content {
+    display: block;
+    /* Show when hovered */
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  padding: 10px 10px 10px 10px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     height: 100%;
+}
+
+.pg-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  align-items: center;
+  margin: 20px 0 20px 0;
 }
 
 
