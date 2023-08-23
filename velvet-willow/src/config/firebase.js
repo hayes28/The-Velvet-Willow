@@ -1,7 +1,7 @@
 const firebaseConfig = {
   apiKey: "AIzaSyABqHximBaL6M1sBnHENryip1QyC6qgaV4",
   authDomain: "velvet-willow.firebaseapp.com",
-  databaseURL: "https://velvet-willow-default-rtdb.firebaseio.com/",
+  databaseURL: "https://velvet-willow-default-rtdb.firebaseio.com",
   projectId: "velvet-willow",
   storageBucket: "velvet-willow.appspot.com",
   messagingSenderId: "256830007264",
