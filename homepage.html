@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Velvet Willow</title>
     <link rel="icon" href="./images/TVW-favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
+    <link rel="stylesheet" type="text/css" href="./styles/StylesHH.css">
     <link rel="stylesheet" href="./styles/styles.css">
 
     <!-- jQuery & Bootstrap -->
@@ -35,7 +35,7 @@
                     <span class="navbar-line2 my-1"></span>
                     <span class="navbar-line3"></span>
                     <span class="navbar-line4 my-1"></span>
-            </button>
+                </button>
                 <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
                     <ul class="navbar-nav ml-auto font-weight-bold">
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
@@ -61,174 +61,178 @@
             <h1 class="font-weight-bold my-0"> Welcome </h1>
             <p>The Velvet Willow is a vintage furniture rental company offering full-service styling, immersive theme
                 ideas, and creative floral designs for any occasion.</p>
-                <button class="btn btn-smile text-white mt-3" onclick="window.location.href='contactForm.html'">
-                    CONTACT FORM
-                </button>
+            <button class="btn btn-smile text-white my-3" onclick="window.location.href='contactForm.html'">
+                CONTACT FORM
+            </button>
         </section>
         </div>
     </header>
 
     <main class="main">
+        <!-- About Section -->
         <section class="about pt-5 pb-5 section d-flex align-items-center">
             <div class="container-lg">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <h1>Hello</h1>
-                        <h4>My name is Tiffanie Tippens</h4>
-                        <p>I will be your style guide! It is my job to keep things fresh, funky, and fun! I have been
-                            styling homes, wardrobes, costumes, and gardens for over 20 years and decided to make art
-                            and design my full-time commitment in 2019. In my previous life, I worked as a tech
-                            consultant. It took me many years to realize my talent, take a HUGE leap of faith and start
-                            living a life of true fulfillment! I am passionate about repurposing elements to give them a
-                            fresh look and coming up with out-of-the-box ideas! Life is just a series of moments. I love
-                            helping people make the most out of these moments. ​</p>
+                    <div class="col-lg-6 mb-5">
+                        <div class="card-about" style="width: 100%;">
+                            <div class="card-body-about">
+                                <h1>Hello</h1>
+                                <h4>My name is Tiffanie Tippens</h4>
+                                <p>I will be your style guide! It is my job to keep things fresh, funky, and fun! I have been
+                                    styling homes, wardrobes, costumes, and gardens for over 20 years and decided to make art
+                                    and design my full-time commitment in 2019. In my previous life, I worked as a tech
+                                    consultant. It took me many years to realize my talent, take a HUGE leap of faith and start
+                                    living a life of true fulfillment! I am passionate about repurposing elements to give them a
+                                    fresh look and coming up with out-of-the-box ideas! Life is just a series of moments. I love
+                                    helping people make the most out of these moments.</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                        <img src="./images/aboutme-tiff.webp" alt="Tiffanie Tippens" width="400px" height="300px"
-                            class="img-fluid" />
+                        <div class="card-about" style="width: 400px;">
+                            <img src="./images/aboutme-tiff.webp" alt="Tiffanie Tippens" width="400px" height="550px"
+                                class="card-img-top-about" />
+                        </div>
                     </div>
-                </div>
-        </section>
-
-        <section class="services pt-5 pb-5 section">
-            <div class="container-lg">
-                <div class="row">
-                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                        <img src="./images/whatwedo.webp" alt="Services" width="500px" height="500px"
-                            class="img-fluid" />
-                    </div>
-                    <div class="col-lg-6">
-                        <h1>What we do</h1>
-                        <p>The Velvet Willow is dedicated to creating a dreamy atmosphere for your wedding, event,
-                            photoshoot, or set. I aim to transport people into a wonderland by integrating vintage
-                            aesthetics with a fresh vision inspired by nature. My furniture is hand-selected so your
-                            design will not be duplicated! Whether you are a photographer looking for a creative
-                            partnership or a brand looking to win over consumers with jaw-dropping aesthetics, I am here
-                            to help. Click the button below to schedule a time to view our studio! I am backed by a team
-                            of local artists who are here to inspire funky and fresh new ideas!</p>
-                    </div>
-                </div>
-        </section>
-
-        <!--REVIEW SECTION-->
-
-        <section class="reviews pt-5 pb-5 section d-flex align-items-center">
-            <div class="container-lg">
-                <div class="loader"></div>
-                <h1 class="text-center">Reviews</h1>
-                <div id="reviewCarouselControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- Slides will be inserted here -->
-                    </div>
-                    <a class="carousel-control-prev" href="#reviewCarouselControls" role="button" data-slide="prev">
-                        <img src="images/arrow_black_left.png" alt="Review Previous" aria-hidden="true" />
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#reviewCarouselControls" role="button" data-slide="next">
-                        <img src="images/arrow_black_right.png" alt="Review Next" aria-hidden="true" />
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
             </div>
         </section>
-
-
-        <!-- SERVICES SECTION -->
-        <section class="services pt-5 pb-5 section">
-            <div class="container-lg text-center"> <!-- Center the text inside the container -->
-                <h1>Services</h1>
-
-                <!-- Full Service Styling -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Full Service Styling</h4>
-                        <p>Feeling uninspired? Allow us to take that stress off your hands with a customized vision
-                            board for you! Whether you are planning a wedding, corporate event, or maybe a girls' night
-                            out for all to remember, we have the design eye and creativity to take your party to the
-                            next level!</p>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                        <img src="./images/full-service-styling.webp" alt="Contact" width="500px" height="500px"
-                            class="img-fluid" />
+            <section class="about pt-5 pb-5 section">
+                <div class="container-lg .container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card-about" style="width: 100%;">
+                                <div class="card-body-about">
+                                    <h1>What we do</h1>
+                                    <p>The Velvet Willow is dedicated to creating a dreamy atmosphere for your wedding, event,
+                                        photoshoot, or set. I aim to transport people into a wonderland by integrating vintage
+                                        aesthetics with a fresh vision inspired by nature. My furniture is hand-selected so your
+                                        design will not be duplicated! Whether you are a photographer looking for a creative
+                                        partnership or a brand looking to win over consumers with jaw-dropping aesthetics, I am here
+                                        to help. Click the button below to schedule a time to view our studio! I am backed by a team
+                                        of local artists who are here to inspire funky and fresh new ideas!</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Floral Design -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Floral Design</h4>
-                        <p>Floral services of any nature or art form are available. Whether you are looking for faux
-                            floral arches, bridal bouquets, custom backdrops, custom displays to frame your lounge, or
-                            funky one-of-a-kind centerpieces we have you covered!</p>
-                    </div>
-                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                        <img src="./images/floral-design.webp" alt="Contact" width="500px" height="500px"
-                            class="img-fluid" />
+            <!--REVIEW SECTION-->
+
+            <section class="reviews pt-5 pb-5 section d-flex align-items-center">
+                <div class="container-lg .container-fluid">
+                    <div class="loader"></div>
+                    <h1 class="text-center">Reviews</h1>
+                    <div id="reviewCarouselControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Slides will be inserted here -->
+                        </div>
+                        <a class="carousel-control-prev" href="#reviewCarouselControls" role="button" data-slide="prev">
+                            <img src="images/arrow_black_left.png" alt="Review Previous" aria-hidden="true" />
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#reviewCarouselControls" role="button" data-slide="next">
+                            <img src="images/arrow_black_right.png" alt="Review Next" aria-hidden="true" />
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
+            </section>
 
-                <!-- Studio Rental -->
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Studio Rental</h4>
-                        <p>We have a beautifully furnished bungalow studio located just outside of downtown Tulsa.</p>
-                        <ol>
-                            <li>There are four pre-staged scenes inside at all times.</li>
-                            <li>Props, costumes, and ring light are available.</li>
-                            <li>Shoot outside! We are located on the grounds of a historic stone mansion with an ivy
-                                wall and industrial back alley.</li>
-                            <li>On-site hair, make-up, Spray tan, and clothing styling is available if requested
-                                beforehand.​​</li>
-                            <li>Studio Pricing:
+
+            <!-- SERVICES SECTION -->
+            <section class="services pt-5 pb-5 section">
+                <div class="container-lg .container-fluid text-center">
+                    <h1>Services</h1>
+
+                    <!-- Full Service Styling -->
+                    <div class="row">
+                        <div class="services col-lg-6">
+                            <h4>Full Service Styling</h4>
+                            <p>Feeling uninspired? Allow us to take that stress off your hands with a customized vision
+                                board for you! Whether you are planning a wedding, corporate event, or maybe a girls'
+                                night
+                                out for all to remember, we have the design eye and creativity to take your party to the
+                                next level!</p>
+                            <div class="services">
+                                <h4>Floral Design</h4>
+                                <p>Floral services of any nature or art form are available. Whether you are looking for
+                                    faux
+                                    floral arches, bridal bouquets, custom backdrops, custom displays to frame your
+                                    lounge, or
+                                    funky one-of-a-kind centerpieces we have you covered!</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 order-lg-1 d-flex justify-content-center align-items-center">
+                            <img src="./images/full-service-styling.webp" alt="Full Service Styling" width="400px"
+                                height="400px" class="img-fluid" />
+                        </div>
+                    </div>
+                    <!-- Studio Rental -->
+
+                    <div class="studio-rental m-3 text-center">
+                        <h4>Wizarding Studio Rental</h4>
+                        <p>Step into the magic with our enchanting bungalow studio, located just outside of downtown
+                            Tulsa's
+                            Diagon Alley.</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Four pre-staged scenes: Great Hall, Hagrid's Hut, Hogwarts
+                                classroom, Forbidden Forest</li>
+                            <li class="list-group-item">Props, costumes (robes, wands, etc.), and magical lighting
+                                available
+                            </li>
+                            <li class="list-group-item">Shoot outside! Explore surroundings like Hogwarts' stone mansion
+                                and
+                                Knockturn Alley</li>
+                            <li class="list-group-item">On-site potions master, magical creature care, wizarding attire
+                                styling</li>
+                            <li class="list-group-item">
+                                <h4>Studio Pricing:</h4>
                                 <ul>
-                                    <li>$75/Hour</li>
+                                    <li>7 Galleons ($75)/Hour</li>
                                     <li>One Hour Minimum</li>
-                                    <li>Specifically requested Furniture is $50 each</li>
-                                    <li>Outdoor-styled scenes are an additional $25 - $75​​</li>
+                                    <li>Specific magical artifacts: 5 Galleons ($50) each</li>
+                                    <li>Outdoor-styled scenes: 2 - 7 Galleons ($25 - $75)</li>
                                 </ul>
                             </li>
-                        </ol>
-                        <p><em>On-site photographer, camera, and lighting equipment not provided.​ Specific furniture
-                                pieces are not guaranteed.</em></p>
+                            <p>No Daily Prophet photographer, magical camera, or lighting equipment. Specific magical
+                                furniture not guaranteed.</p>
+                        </ul>
                     </div>
-                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
-                        <img src="./images/studio-rental.webp" alt="Contact" width="500px" height="500px"
-                            class="img-fluid" />
+            </section>
+            <!-- Next Steps -->
+            <section class="next-steps text-center">
+                <div class="container-lg .container-fluid">
+                    <div class="next-steps">
+                        <h1>Next Steps?</h1>
+                        <ul class="list-group">
+                            <li class="list-group-item">Click on the contact form link below to set up your initial
+                                design
+                                consultation. </li>
+                            <li class="list-group-item">Once the form has been sent, you will receive a text from our
+                                designer to confirm your
+                                appointment. </li>
+                            <!-- UPDATE THIS ONCE CART AND CREATE LOUNGE PAGE ARE UPDATED -->
+                            <li class="list-group-item">To create a wishlist, go to the Create Lounge page and click the
+                                heart option on each item
+                                you
+                                are interested in. Take a screenshot of your items and send this list to
+                                tiffanietippens@gmail.com.​​</li>
+                            <!--This line above will be replaced once the cart/checklist is up and running-->
+                        </ul>
+                        <button class="btn btn-smile text-white my-3" onclick="window.location.href='contactForm.html'">
+                            CONTACT FORM
+                        </button>
+
                     </div>
                 </div>
-        </section>
-
-        <!-- Next Steps -->
-        <section class="contact pt-5 pb-5 justify-content-center align-items-center text-white">
-            <div class="container-lg">
-                <div class="row">
-                    </div>
-            <div class="col-lg-6">
-                <h4>What are the next steps?</h4>
-                <ol>
-                    <li>Click on the contact form link below to set up your initial design consultation. </li>
-                    <li>Once the form has been sent, you will receive a text from our designer to confirm your
-                        appointment. </li>
-                        <!-- UPDATE THIS ONCE CART AND CREATE LOUNGE PAGE ARE UPDATED -->
-                    <li>To create a wishlist, go to the Create Lounge page and click the heart option on each item you
-                        are interested in. Take a screenshot of your items and send this list to
-                        tiffanietippens@gmail.com.​​</li>
-                    <!--This line above will be replaced once the cart/checklist is up and running-->
-                    <li>Below is a map of where our showroom is located. Please park behind the law firm and come into
-                        the small back building. </li>
-                </ol>
-                <button class="btn btn-smile text-white mt-3" onclick="window.location.href='contactForm.html'">
-                    CONTACT FORM
-                </button>
-
-            </div>
-            </div>
-        </section>
+            </section>
 
 
     </main>
     <footer class="footer d-flex align-items-center justify-content-center">
-        <div class="container">
+        <div class="container .container-fluid">
             <div class="row d-flex align-items-center flex-column flex-sm-row">
                 <div class="col footer-item d-flex justify-content-center justify-content-sm-start">
                     <div class="footer-logo">
@@ -237,7 +241,8 @@
                 </div>
                 <div
                     class="col d-flex align-items-end align-self-sm-end justify-content-center order-2 order-sm-0 footer-item">
-                    <div class="trademark text-muted">
+                    <div class="trademark text-muted text-center">
+                        <p class="trademark text-muted text-center">“Draco Dormiens Nunquam Titillandus”</p><br>
                         <span><em>©2019 The Velvet Willow</em></span>
                     </div>
                 </div>
