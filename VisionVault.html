@@ -7,6 +7,7 @@
     <title>Vision Vault</title>
     <link rel="icon" href="./images/TVW-favicon.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./styles/mainStyle.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
@@ -25,38 +26,36 @@
 </head>
 
 <body class="vision-vault body">
-    <header class="header visionVault-header">
+    <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-sm navbar-dark pt-4 px-0">
-                <button class="navbar-toggler border-0 align-self-start mt-3" type="button" data-toggle="collapse"
-                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                <button class="navbar-toggler border-0 align-self-start mt-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-line1"></span>
-                    <span class="navbar-line2 my-1"></span>
-                    <span class="navbar-line3"></span>
-                    <span class="navbar-line4 my-1"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3"
-                    href="homepage.html">
-                    <img class="logo" src="./images/tifflogo.png" alt="navbar-logo" width="500px" height="500px
-                        class=" img-fluid" />
-                </a>
+
                 <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
                     <ul class="navbar-nav ml-auto font-weight-bold">
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
                             <a class="nav-link px-1" href="homepage.html">HOME</a>
                         </li>
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
-                            <a class="nav-link px-1" href="create.html">CREATE LOUNGE</a>
+                            <a class="nav-link px-1" href="CreateLounge.html">CREATE LOUNGE</a>
                         </li>
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
                             <a class="nav-link px-1" href="VisionVault.html">VISION VAULT</a>
+                        </li>
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
                             <a class="nav-link px-1" href="FAQ.html">FAQ</a>
                         </li>
                     </ul>
                 </div>
             </nav>
+            <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3" href="homepage.html">
+                    <img class="logo" src="./images/tifflogo.png" alt="navbar-logo" width="500px" height="500px
+                        class=" img-fluid" />
+                </a>
         </div>
     </header>
 
@@ -77,7 +76,7 @@
                             <img class="card-img-top" src="./images/visionVault-images/Tea Party.webp" alt="Card image">
                             <div class="card-body">
                                 <h4 class="card-title">Events</h4>
-                                <p class="card-text">Some example text.</p>
+                                <p class="card-text">Whether it's a birthday bash or a heartfelt celebration of life, we're here to assist you in crafting unforgettable moments, no matter the scale. Explore our array of meticulously curated events that we've expertly brought to life for our cherished clients. </p>
                                 <a href="#" class="btn btn-light category-btn rwe-list-item__link" id="eventsThumbnailLink">Events</a>
                             </div>
                         </div>
@@ -89,7 +88,7 @@
                                 alt="Card image">
                             <div class="card-body">
                                 <h4 class="card-title">Weddings</h4>
-                                <p class="card-text">Some example text.</p>
+                                <p class="card-text">From chic minimalism to extravagant grandeur, we're your partners in planning and designing the wedding of your dreams. Dive into the world of wedding styles, each exquisitely executed, by exploring the diverse subcategories we've had the privilege to create for other couples.</p>
                                 <a href="#" class="btn btn-light category-btn rwe-list-item__link" id="weddingsThumbnailLink">Weddings</a>
                             </div>
                         </div>
@@ -97,6 +96,9 @@
                 </div>
             </div>
         </div>
+        <button class="btn btn-smile text-white mt-3" onclick="window.location.href='contactForm.html'">
+            CONTACT FORM
+        </button>
     </main>
 
     <footer class="footer d-flex align-items-center justify-content-center">
@@ -131,7 +133,6 @@
             </div>
         </div>
     </footer>
-    <!-- Include the Firebase SDK script for Storage -->
 </body>
 
 </html>
