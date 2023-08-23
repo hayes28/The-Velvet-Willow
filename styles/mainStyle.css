@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&family=Saira+Condensed:wght@300&display=swap");
 
 :root {
+<<<<<<< HEAD
   --font-family: "Bebas Neue", sans-serif;
   --font-family-second: "Dancing Script", cursive;
   --font-family: "Roboto", sans-serif;
@@ -19,6 +20,23 @@
 
   --faq-pad-inner: 8vw;
   --faq-pad-outer: 7vw;
+=======
+    --font-family-second: 'Dancing Script', cursive;
+    --font-family-main: 'Saira Condensed', sans-serif;
+    --main-color: #ad8201;
+    --opacity-value: 0.9;
+    --background-color: #25574C;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --nav-line-height: 2px;
+    --pros-padding: 62px;
+    --reviews-arrows-pad: 300px;
+    --popular-arrows-x: -6vw;
+    --smile-p-margin: 20px;
+
+    --faq-pad-inner: 8vw;
+    --faq-pad-outer: 7vw;
+>>>>>>> 89bc4a0ca0f7d4d18e380bb08ce2d5e7d67808fb
 }
 
 /* General Styles  */
@@ -29,14 +47,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* body {
-    font-family: var(--font-family);
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--color-white);
-    background-color: var(--color-black);
-} */
 
 .logo {
   height: auto;
@@ -69,6 +79,7 @@
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 .services h4 {
   font-family: "Saira", sans-serif;
   font-size: 24px;
@@ -76,12 +87,15 @@
   font-weight: bold;
 }
 
+=======
+>>>>>>> 89bc4a0ca0f7d4d18e380bb08ce2d5e7d67808fb
 p {
   font-family: "Saira", sans-serif;
   font-size: 24px;
   color: var(--color-white);
 }
 
+<<<<<<< HEAD
 .vision-vault h4 {
   font-family: "Saira", sans-serif;
   font-size: 24px;
@@ -154,6 +168,16 @@ p {
 
 .section-header span {
   font-weight: bold;
+=======
+
+.btn.btn-smile {
+    background-color: var(--main-color);
+    width: 162px;
+    height: 44px;
+    font-size: 14px;
+    border-radius: 22px;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+>>>>>>> 89bc4a0ca0f7d4d18e380bb08ce2d5e7d67808fb
 }
 
 .btn:hover,
@@ -161,7 +185,11 @@ p {
   opacity: var(--opacity-value);
 }
 
-/* Header / Hero Styles */
+/* ====================================
+=====================================*/
+/* HEADER - HOMEPAGE */
+/* ====================================
+=====================================*/
 
 .header {
   background-color: var(--background-color);
@@ -217,6 +245,7 @@ p {
   transition: 180ms;
 }
 
+<<<<<<< HEAD
 .btn.btn-smile {
   background-color: var(--main-color);
   width: 162px;
@@ -224,9 +253,27 @@ p {
   font-size: 14px;
   border-radius: 22px;
   filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+=======
+.about {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+>>>>>>> 89bc4a0ca0f7d4d18e380bb08ce2d5e7d67808fb
 }
 
-/* REVIEWS */
+.about p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
+    font-weight: extra-light;
+}
+
+/* ====================================
+=====================================*/
+/* REVIEWS SECTION */
+/* ====================================
+=====================================*/
 
 .reviews {
   /* height: 392px; */
@@ -379,7 +426,51 @@ p {
   }
 }
 
+<<<<<<< HEAD
 /* FAQS */
+=======
+/* ====================================
+=====================================*/
+/* SERVICES SECTION */
+/* ====================================
+=====================================*/
+
+.services h4 {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.services {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
+}
+
+.section-header h2 {
+    font-weight: 300;
+}
+
+.section-header span {
+    font-weight: bold;
+}
+
+
+
+/* ====================================
+=====================================*/
+/* FAQS PAGE */
+/* ====================================
+=====================================*/
+>>>>>>> 89bc4a0ca0f7d4d18e380bb08ce2d5e7d67808fb
 
 .faqs {
   background-color: var(--color-black);
@@ -421,11 +512,11 @@ p {
   align-self: flex-end;
 }
 
-/* .faqs .col-md-6 {
-    padding: 0;
-} */
-
-/* CONTACT NEXT STEPS */
+/* ====================================
+=====================================*/
+/* CONTACT PAGE */
+/* ====================================
+=====================================*/
 
 .contact {
   display: flex;
@@ -437,6 +528,12 @@ p {
   padding-bottom: 20px;
   justify-content: center;
   align-items: center;
+}
+
+.contact p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
 }
 
 .contact-btn {
@@ -603,25 +700,54 @@ a.nav-link.ml-auto:hover {
   padding: 0;
 }
 
+<<<<<<< HEAD
 /* Optional: Increase spacing between nav items */
 .navbar-nav .nav-item {
   margin-right: 20px; /* Adjust as needed */
 }
 
 
+=======
+>>>>>>> 89bc4a0ca0f7d4d18e380bb08ce2d5e7d67808fb
 /* ====================================
 =====================================*/
-/* VINTAGE VAULT */
+/* VISION VAULT */
 /* ====================================
 =====================================*/
 
-/* HEADER SECTION */
+.vision-vault h4 {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-black);
+    font-weight: bold;
+}
 
+<<<<<<< HEAD
 .vision-vault {
   background-color: var(--color-black);
   color: var(--color-white);
   padding-top: 100px;
   padding-bottom: 100px;
+=======
+.vision-vault .rwe-list-item__link {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-black);
+    font-weight: bold;
+    text-decoration: none;
+    border: #ad8201 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.vision-vault a:hover {
+    color: var(--main-color);
+    text-decoration: none;
+>>>>>>> 89bc4a0ca0f7d4d18e380bb08ce2d5e7d67808fb
 }
 
 .visionVault-header {
@@ -630,19 +756,55 @@ a.nav-link.ml-auto:hover {
   background-color: var(--background-color);
 }
 
+.vision-vault {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
 .vision h1 {
   font-family: "Dancing Script", sans-serif;
   font-size: 72px;
   color: var(--main-color);
 }
 
-/* categories */
+/* ====================================
+=====================================*/
+/* CATEGORIES - VISION VAULT PAGE */
+/* ====================================
+=====================================*/
 
-/* .rwe-list-item__link {
-    display: block;
-    text-decoration: none;
-    color: #333;
-} */
+.pg-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.category {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px;
+}
+
+/* Responsive breakpoint for mobile view */
+@media screen and (max-width: 768px) {
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 .rwe-list-item__image img {
   width: 100%;
@@ -661,6 +823,7 @@ a.nav-link.ml-auto:hover {
   /* Initially hidden */
 }
 
+<<<<<<< HEAD
 /* .rwe-list-item__link:hover .content {
     display: block;
     /* Show when hovered */
@@ -681,76 +844,101 @@ a.nav-link.ml-auto:hover {
   padding: 10px 10px 10px 10px;
   align-items: center;
   margin: 20px 0 20px 0;
+=======
+.card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-/* Style for the categories section */
-/* .categories {
-    padding: 50px 0;
-    text-align: center;
-} */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+>>>>>>> 89bc4a0ca0f7d4d18e380bb08ce2d5e7d67808fb
+}
 
-/* Style for the category links */
-/* .category-link {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    margin-bottom: 20px;
-    transition: transform 0.3s, box-shadow 0.3s;
-} */
 
-/* .category-link img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-} */
-
-/* .category-link p {
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 35px;
-    font-family: var(--font-family-second);
-    color: var(--main-color);
-} */
-
-/* .category-link:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-} */
-
-/* .category-link:hover img {
-    transform: scale(1.05);
-} */
-
-/* Styling for the subcategories section */
-/* .subcategories {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: var(--background-color);
-} */
-
-/* Styling for the subcategory heading */
-/* .subcategory-heading {
+.card-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
-} */
+    color: var(--color-black);
+}
 
-/* Styling for the subcategory links */
-/* .subcategory-link {
-    display: block;
+.card-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-black);
+}
+
+.card-img-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
     padding: 10px;
-    text-decoration: none;
+    object-fit: cover;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subcategory-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    padding: 10px 10px 10px 10px;
+    color: var(--color-black);
+}
+
+.subcategory-card {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    margin: 10px;
+    text-align: center;
+}
+
+.subcategory-card h4 {
+    /* Styles for the title within the subcategory card */
     color: #333;
     font-weight: bold;
-    transition: background-color 0.3s ease;
-} */
+}
 
-/* .subcategory-link:hover {
-    background-color: #f0f0f0;
-} */
+.subcategory-card a {
+    /* Styles for a link within the subcategory card */
+    color: #007bff; /* Change link color */
+    cursor: pointer; /* Change cursor style */
+    text-decoration: none; /* Remove underline */
+}
 
-/* Footer  */
+.subcategory-card a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.event-image {
+    width: calc(50% - 20px);
+    padding: 10px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+}
+
+/* ====================================
+=====================================*/
+/* FOOTER - BASIC FORMAT FOR ALL PAGES */
+/* ====================================
+=====================================*/
 
 .footer {
   background-color: var(--background-color);
