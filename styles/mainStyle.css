@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&family=Saira+Condensed:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&family=Saira+Condensed:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Roboto:wght@100&family=Saira+Condensed:wght@300&display=swap');
 
 :root {
   --font-family: "Bebas Neue", sans-serif;
@@ -17,6 +17,21 @@
   --popular-arrows-x: -6vw;
   --smile-p-margin: 20px;
   --faq-pad-outer: 7vw;
+    --font-family-second: 'Dancing Script', cursive;
+    --font-family-main: 'Saira Condensed', sans-serif;
+    --main-color: #ad8201;
+    --opacity-value: 0.9;
+    --background-color: #25574C;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --nav-line-height: 2px;
+    --pros-padding: 62px;
+    --reviews-arrows-pad: 300px;
+    --popular-arrows-x: -6vw;
+    --smile-p-margin: 20px;
+
+    --faq-pad-inner: 8vw;
+    --faq-pad-outer: 7vw;
 }
 
 /* General Styles  */
@@ -24,39 +39,40 @@
 /**--- Base ---**/
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-  height: auto;
-  border: #ad8201 solid 2px;
-  /* maintain aspect ratio */
+    height: auto;
+    border: #ad8201 solid 2px;
+    /* maintain aspect ratio */
 }
 
+
 .hero h1 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 72px;
-  color: var(--color-black);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 72px;
+    color: var(--color-black);
 }
 
 .hero p {
-  font-family: "Saira", sans-serif;
-  font-size: 24px;
-  color: var(--color-black);
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-black);
 }
 
 .main h1 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 72px;
-  color: var(--color-white);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 72px;
+    color: var(--color-white);
 }
 
 .main h4 {
-  font-family: "Saira", sans-serif;
-  font-size: 24px;
-  color: var(--color-white);
-  font-weight: bold;
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
+    font-weight: bold;
 }
 
 .services h4 {
@@ -72,6 +88,14 @@ p {
   color: var(--color-white);
 }
 
+
+.btn.btn-smile {
+    background-color: var(--main-color);
+    width: 162px;
+    height: 44px;
+    font-size: 14px;
+    border-radius: 22px;
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
 .vision-vault h4 {
   font-family: "Saira", sans-serif;
   font-size: 24px;
@@ -148,7 +172,7 @@ p {
 
 .btn:hover,
 .btn:active {
-  opacity: var(--opacity-value);
+    opacity: var(--opacity-value);
 }
 
 /* ====================================
@@ -158,59 +182,64 @@ p {
 =====================================*/
 
 .header {
-  background-color: var(--background-color);
-  max-width: 100%;
-  height: auto;
+    background-color: var(--background-color);
+    max-width: 100%;
+    height: auto;
 }
 
 .header .navbar-line1,
 .header .navbar-line2,
 .header .navbar-line3 {
-  background-color: var(--color-black);
-  color: var(--color-black);
-  height: 2px;
-  display: block;
-  margin: 2px 0;
-  /* Add some vertical margin */
+    background-color: var(--color-black);
+    color: var(--color-black);
+    height: 2px;
+    display: block;
+    margin: 2px 0;
+    /* Add some vertical margin */
 }
 
 .header .navbar-line1 {
-  width: 20px;
+    width: 20px;
 }
 
 .header .navbar-line2 {
-  width: 13px;
+    width: 13px;
 }
 
 .header .navbar-line3 {
-  width: 18px;
+    width: 18px;
 }
 
 .header .navbar-toggler {
-  border: none;
-  background-color: transparent;
-  outline: none;
+    border: none;
+    background-color: transparent;
+    outline: none;
 }
 
 .header .nav-link {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .header .nav-link:hover {
-  color: var(--main-color) !important;
+    color: var(--main-color) !important;
 }
 
 .header .nav-link:after {
-  content: "";
-  display: block;
-  background-color: var(--color-black);
-  width: 0;
-  height: 2px;
-  top: 4px;
-  position: relative;
-  transition: 180ms;
+    content: "";
+    display: block;
+    background-color: var(--color-black);
+    width: 0;
+    height: 2px;
+    top: 4px;
+    position: relative;
+    transition: 180ms;
 }
 
+.about {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
 .btn.btn-smile {
   background-color: var(--main-color);
   width: 162px;
@@ -234,154 +263,156 @@ p {
 =====================================*/
 
 .reviews {
-  /* height: 392px; */
-  background-color: var(--main-color);
+    /* height: 392px; */
+    background-color: var(--main-color);
 }
 
 .reviews .carousel-item img {
-  width: 160px;
-  border-radius: 75px;
-  margin: 10px;
+    width: 160px;
+    border-radius: 75px;
+    margin: 10px;
 }
 
 .review-text {
-  padding: 10px 50px 20px;
+    padding: 10px 50px 20px;
 }
 
 .reviews .row [class*="col"] {
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .review-text p {
-  font-size: 22px;
-  line-height: 34px;
-  margin-bottom: 22px;
-  position: relative;
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 22px;
+    position: relative;
 }
 
 .review-text p::before {
-  content: "“";
-  /* Opening review */
-  font-size: 40px;
-  /* Adjust the size as needed */
-  position: absolute;
-  left: -20px;
-  /* Adjust the position as needed */
-  top: 0;
+    content: '“';
+    /* Opening review */
+    font-size: 40px;
+    /* Adjust the size as needed */
+    position: absolute;
+    left: -20px;
+    /* Adjust the position as needed */
+    top: 0;
 }
 
 .review-text p::after {
-  content: "”";
-  /* Closing review */
-  font-size: 40px;
-  /* Adjust the size as needed */
-  position: absolute;
+    content: '”';
+    /* Closing review */
+    font-size: 40px;
+    /* Adjust the size as needed */
+    position: absolute;
 }
 
 .review-text h4 {
-  font-size: 22px;
+    font-size: 22px;
 }
 
 .review-text span {
-  font-style: italic;
-  font-size: 22px;
+    font-style: italic;
+    font-size: 22px;
 }
 
 .carousel-control-prev img,
 .carousel-control-next img {
-  width: 30px;
+    width: 30px;
 }
 
 .reviews .carousel-control-prev {
-  left: -60px;
-  /* Adjust as needed */
+    left: -60px;
+    /* Adjust as needed */
 }
 
 .reviews .carousel-control-next {
-  right: -60px;
-  /* Adjust as needed */
+    right: -60px;
+    /* Adjust as needed */
 }
 
+
 .reviews .carousel-control-prev.arrow-left {
-  padding-right: 300px;
+    padding-right: 300px;
 }
 
 .reviews .carousel-control-next.arrow-right {
-  padding-left: 300px;
+    padding-left: 300px;
 }
 
 .loader {
-  border: 10px solid #ffffff;
-  border-top: 10px solid #255742;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s linear infinite;
-  margin: auto;
+    border: 10px solid #ffffff;
+    border-top: 10px solid #255742;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
 }
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
 
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media (max-width: 768px) {
-  .reviews .carousel-control-prev {
-    left: 10px;
-    /* Adjust as needed */
-  }
+    .reviews .carousel-control-prev {
+        left: 10px;
+        /* Adjust as needed */
+    }
 
-  .reviews .carousel-control-next {
-    right: 10px;
-    /* Adjust as needed */
-  }
+    .reviews .carousel-control-next {
+        right: 10px;
+        /* Adjust as needed */
+    }
 
-  .carousel-control-prev img,
-  .carousel-control-next img {
-    width: 20px;
-  }
+    .carousel-control-prev img,
+    .carousel-control-next img {
+        width: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .review-text p {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 10px 50px 20px;
+    }
+
+    .review-text h4,
+    .review-text span {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 768px) {
-  .review-text p {
-    font-size: 18px;
-    line-height: 28px;
-    padding: 10px 50px 20px;
-  }
-
-  .review-text h4,
-  .review-text span {
-    font-size: 18px;
-  }
+    .reviews .carousel-item img {
+        width: 120px;
+        margin: 5px;
+    }
 }
 
 @media (max-width: 768px) {
-  .reviews .carousel-item img {
-    width: 120px;
-    margin: 5px;
-  }
-}
+    .review-text p::before {
+        left: -15px;
+        /* Adjust as needed */
+        font-size: 30px;
+        /* Adjust as needed */
+    }
 
-@media (max-width: 768px) {
-  .review-text p::before {
-    left: -15px;
-    /* Adjust as needed */
-    font-size: 30px;
-    /* Adjust as needed */
-  }
-
-  .review-text p::after {
-    right: -15px;
-    /* Adjust as needed */
-    font-size: 30px;
-    /* Adjust as needed */
-  }
+    .review-text p::after {
+        right: -15px;
+        /* Adjust as needed */
+        font-size: 30px;
+        /* Adjust as needed */
+    }
 }
 
 /* FAQS */
@@ -427,44 +458,87 @@ p {
 /* ====================================
 =====================================*/
 
+/* ====================================
+=====================================*/
+/* SERVICES SECTION */
+/* ====================================
+=====================================*/
+
+.services h4 {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.services {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.services p {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
+}
+
+.section-header h2 {
+    font-weight: 300;
+}
+
+.section-header span {
+    font-weight: bold;
+}
+
+
+
+/* ====================================
+=====================================*/
+/* FAQS PAGE */
+/* ====================================
+=====================================*/
+
+
 .faqs {
-  background-color: var(--color-black);
-  padding-top: 100px;
-  padding-bottom: 100px;
+    background-color: var(--color-black);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .faqs h1 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 100px;
-  color: var(--color-white);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 100px;
+    color: var(--color-white);
 }
 
 .faqs h4 {
-  font-family: "Saira", sans-serif;
-  font-size: 48px;
-  color: var(--color-white);
-  font-weight: bold;
+    font-family: 'Saira', sans-serif;
+    font-size: 48px;
+    color: var(--color-white);
+    font-weight: bold;
 }
 
 .faqs p {
-  font-family: "Saira", sans-serif;
-  font-size: 24px;
-  color: var(--color-white);
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
 }
 
 .faqs .container {
-  padding: 0;
-  text-align: center;
+    padding: 0;
+    text-align: center;
 }
 
 .faqs .row {
-  padding: 0;
-  justify-content: center;
+    padding: 0;
+    justify-content: center;
 }
 
 .faqs .footer {
-  padding: 0;
-  align-self: flex-end;
+    padding: 0;
+    align-self: flex-end;
 }
 
 /* ====================================
@@ -474,15 +548,15 @@ p {
 =====================================*/
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--color-black);
-  color: var(--color-white);
-  padding-top: 20px;
-  padding-bottom: 20px;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact p {
@@ -492,131 +566,132 @@ p {
 }
 
 .contact-btn {
-  font-size: 19px;
-  width: 100%;
-  margin-top: 25px;
-  border: none;
-  padding: 12px 20px;
-  background-color: var(--main-color);
-  color: var(--color-black);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  border-bottom: 3px solid #cca01d;
+    font-size: 19px;
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    padding: 12px 20px;
+    background-color: var(--main-color);
+    color: var(--color-black);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-bottom: 3px solid #cca01d;
 }
 
 .contact-btn:hover {
-  background-color: var(--color-black);
-  color: var(--main-color);
-  border-bottom: 3px solid var(--main-color);
+    background-color: var(--color-black);
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
 
 .contact-btn:active {
-  background-color: var(--color-black);
-  color: var(--main-color);
-  border-bottom: 3px solid var(--main-color);
+    background-color: var(--color-black);
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
 }
 
 .contact-form {
-  width: 100%;
-  max-width: 600px;
-  border: none;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
-  text-align: left;
-  /* Change this line */
-  font-size: 25px;
-  margin: 0 auto;
-  /* Center the entire form on the page */
+    width: 100%;
+    max-width: 600px;
+    border: none;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    text-align: left;
+    /* Change this line */
+    font-size: 25px;
+    margin: 0 auto;
+    /* Center the entire form on the page */
 }
 
 .form-group label {
-  width: 80%;
-  /* or any desired width */
-  white-space: normal;
+    width: 80%;
+    /* or any desired width */
+    white-space: normal;
 }
 
 .custom-checkbox .form-check-input {
-  display: none;
+    display: none;
 }
 
 .custom-checkbox .form-check-label {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  font-size: 22px;
-  line-height: 27px;
-  color: var(--color-white);
-  font-weight: 300;
-  width: 100%;
-  /* this will use the full width available */
-  white-space: normal;
-  /* this will allow the text to wrap to the next line */
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--color-white);
+    font-weight: 300;
+    width: 100%;
+    /* this will use the full width available */
+    white-space: normal;
+    /* this will allow the text to wrap to the next line */
 }
 
 .custom-checkbox .form-check-label:before,
 .custom-checkbox .form-check-label:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #fff;
-  /* Border color */
-  background-color: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    /* Border color */
+    background-color: transparent;
 }
 
-.custom-checkbox .form-check-input:checked + .form-check-label:after {
-  background-color: #ff9900;
-  /* Checked background color */
+.custom-checkbox .form-check-input:checked+.form-check-label:after {
+    background-color: #ff9900;
+    /* Checked background color */
 }
 
 .custom-checkbox .form-check-label:after {
-  left: 4px;
-  top: 4px;
-  width: 12px;
-  height: 12px;
-  display: none;
+    left: 4px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    display: none;
 }
 
-.custom-checkbox .form-check-input:checked + .form-check-label:after {
-  display: block;
+.custom-checkbox .form-check-input:checked+.form-check-label:after {
+    display: block;
 }
+
 
 .disclaimer {
-  font-size: 20px !important;
-  color: var(--color-white);
-  margin-top: 20px;
+    font-size: 20px !important;
+    color: var(--color-white);
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
-  .custom-checkbox .form-check-label {
-    font-size: 14px;
-    /* You can adjust this value as needed */
-  }
+    .custom-checkbox .form-check-label {
+        font-size: 14px;
+        /* You can adjust this value as needed */
+    }
 
-  .form-check-input {
-    width: 16px;
-    height: 16px;
-  }
+    .form-check-input {
+        width: 16px;
+        height: 16px;
+    }
 
-  .form-group {
-    padding: 10px;
-    /* Adjust as needed */
-  }
+    .form-group {
+        padding: 10px;
+        /* Adjust as needed */
+    }
 
-  .custom-checkbox .form-check-label {
-    padding-left: 40px;
-    /* Adjust to align checkboxes and labels */
-  }
+    .custom-checkbox .form-check-label {
+        padding-left: 40px;
+        /* Adjust to align checkboxes and labels */
+    }
 
-  .contact-form {
-    padding: 20px;
-    /* Add padding around the entire form if needed */
-  }
+    .contact-form {
+        padding: 20px;
+        /* Add padding around the entire form if needed */
+    }
 }
 
 /* Position the cart icon container */
@@ -679,12 +754,30 @@ a.nav-link.ml-auto:hover {
   color: var(--color-white);
   padding-top: 100px;
   padding-bottom: 100px;
+.vision-vault .rwe-list-item__link {
+    font-family: 'Saira', sans-serif;
+    font-size: 24px;
+    color: var(--color-black);
+    font-weight: bold;
+    text-decoration: none;
+    border: #ad8201 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.vision-vault a:hover {
+    color: var(--main-color);
+    text-decoration: none;
 }
 
 .visionVault-header {
-  background-size: cover;
-  background-position-y: -100px;
-  background-color: var(--background-color);
+    background-size: cover;
+    background-position-y: -100px;
+    background-color: var(--background-color);
 }
 
 .vision-vault {
@@ -693,9 +786,9 @@ a.nav-link.ml-auto:hover {
 }
 
 .vision h1 {
-  font-family: "Dancing Script", sans-serif;
-  font-size: 72px;
-  color: var(--main-color);
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 72px;
+    color: var(--main-color);
 }
 
 /* ====================================
@@ -738,22 +831,27 @@ a.nav-link.ml-auto:hover {
 
 
 .rwe-list-item__image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  align-items: center;
+    width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
 }
 
 .rwe-list-item__title {
-  text-align: center;
-  margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .content {
-  display: none;
-  /* Initially hidden */
+    display: none;
+    /* Initially hidden */
 }
 
+.card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 /* .rwe-list-item__link:hover .content {
     display: block;
     /* Show when hovered */
@@ -765,6 +863,12 @@ a.nav-link.ml-auto:hover {
   align-items: center;
   margin: 20px 0 20px 0;
   padding: 10px 10px 10px 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .pg-wrap {
@@ -858,35 +962,35 @@ a.nav-link.ml-auto:hover {
 =====================================*/
 
 .footer {
-  background-color: var(--background-color);
-  height: 249px;
+    background-color: var(--background-color);
+    height: 249px;
 }
 
 .footer .container {
-  height: 100%;
+    height: 100%;
 }
 
 .footer .row {
-  height: 100%;
+    height: 100%;
 }
 
 .footer .footer-item {
-  padding: 0;
+    padding: 0;
 }
 
 .footer .social-item {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 .footer .social-item a {
-  color: var(--color-white);
-  text-decoration: none;
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 .footer .twitter-icon {
-  padding: 0 20px;
+    padding: 0 20px;
 }
 
 .footer .trademark {
-  padding-bottom: 39px;
+    padding-bottom: 39px;
 }
