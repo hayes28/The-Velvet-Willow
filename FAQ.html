@@ -20,28 +20,23 @@
     <header class="header">
         <div class="container">
             <nav class="navbar navbar-expand-sm navbar-dark pt-4 px-0">
-                <button class="navbar-toggler border-0 align-self-start mt-3" type="button" data-toggle="collapse"
-                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                <button class="navbar-toggler border-0 align-self-start mt-3" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-line1"></span>
-                    <span class="navbar-line2 my-1"></span>
-                    <span class="navbar-line3"></span>
-                    <span class="navbar-line4 my-1"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3" href="#">
-                    <img class="logo" src="./images/tifflogo.png" alt="navbar-logo" width="500px" height="500px
-                        class=" img-fluid" />
-                </a>
+
                 <div class="collapse navbar-collapse text-center mt-3" id="navbarNav">
                     <ul class="navbar-nav ml-auto font-weight-bold">
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
                             <a class="nav-link px-1" href="homepage.html">HOME</a>
                         </li>
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
-                            <a class="nav-link px-1" href="create.html">CREATE LOUNGE</a>
+                            <a class="nav-link px-1" href="CreateLounge.html">CREATE LOUNGE</a>
                         </li>
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
                             <a class="nav-link px-1" href="VisionVault.html">VISION VAULT</a>
+                        </li>
                         <li class="nav-item px-0 px-sm-5 py-2 py-sm-0">
                             <a class="nav-link px-1" href="FAQ.html">FAQ</a>
                         </li>
@@ -52,11 +47,11 @@
                     </ul>
                 </div>
             </nav>
+            <a class="navbar-brand mx-auto d-flex flex-column flex-sm-row align-items-center mt-3" href="homepage.html">
+                    <img class="logo" src="./images/tifflogo.png" alt="navbar-logo" width="500px" height="500px
+                        class=" img-fluid" />
+                </a>
         </div>
-                <button class="btn btn-smile text-white mt-3" onclick="window.location.href='contactForm.html'">
-                    CONTACT FORM
-                </button>
-            </div>
     </header>
 
         <!-- FAQ -->
@@ -185,7 +180,9 @@
                     </div>
                 </div>
             </div>
-
+            <button class="btn btn-smile text-white mt-3" onclick="window.location.href='contactForm.html'">
+                CONTACT FORM
+            </button>
         </section>
         </main>
         <footer class="footer d-flex align-items-center justify-content-center">
